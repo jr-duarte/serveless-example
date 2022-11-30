@@ -8394,6 +8394,13 @@ serverless-offline@^11.6.0:
     velocityjs "^2.0.6"
     ws "^8.11.0"
 
+serverless-prune-plugin@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/serverless-prune-plugin/-/serverless-prune-plugin-2.0.1.tgz#c50d408a2e6f89ce1e72e0bb8ea3c914be1e67d9"
+  integrity sha512-fWttDV5TD3K6g9NRDJUuA/cq0AzAI0ya1FZXQKtCnWFfaGP7CzZHZWzlvnNofqvKdpY8vXtaAiswc6gdHXaTUw==
+  dependencies:
+    bluebird "^3.7.2"
+
 serverless-webpack@^5.6.1:
   version "5.11.0"
   resolved "https://registry.yarnpkg.com/serverless-webpack/-/serverless-webpack-5.11.0.tgz#1cd4397925af47943fffec79d755e15d91720406"

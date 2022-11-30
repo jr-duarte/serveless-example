@@ -10,15 +10,20 @@ plugins:
   - serverless-offline-env
   - serverless-offline
   - serverless-dotenv-plugin
+  - serverless-prune-plugin
 
 custom:
+  bundle:
+    tsConfig: 'tsconfig.build.json'
   serverless-offline-env:
     path: ./env/.env.staging
   dotenv:
     basePath: ./env/
     logging: false
-  bundle:
-    tsConfig: 'tsconfig.build.json'
+  prune:
+    automatic: true
+    includeLayers: true
+    number: 1
 
 functions:
   hello:
