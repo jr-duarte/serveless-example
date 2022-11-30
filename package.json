@@ -12,8 +12,7 @@
     "remove:staging": "serverless remove -s staging"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.7",
-    "eslint-config-prettier": "^8.5.0"
+    "aws-lambda": "^1.0.7"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.109",
@@ -22,6 +21,7 @@
     "dotenv": "^16.0.3",
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.0",
