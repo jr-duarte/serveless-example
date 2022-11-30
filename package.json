@@ -1,0 +1,34 @@
+{
+  "name": "serverless-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "predev": "yarn",
+    "dev": "serverless offline start -s staging",
+    "test": "serverless-bundle test",
+    "deploy:staging": "serverless deploy -s staging",
+    "deploy:production": "serverless deploy -s production",
+    "remove:production": "serverless remove -s production",
+    "remove:staging": "serverless remove -s staging"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "serverless-bundle": "^5.5.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-offline": "^11.6.0",
+    "serverless-offline-env": "^0.2.0",
+    "typescript": "^4.9.3"
+  }
+}

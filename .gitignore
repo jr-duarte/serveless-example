@@ -1,0 +1,9 @@
+# package directories
+node_modules
+.webpack
+
+# Serverless directories
+.serverless
+
+# env
+env

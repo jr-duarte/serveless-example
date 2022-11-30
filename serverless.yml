@@ -1,0 +1,29 @@
+service: serveless-example
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-bundle
+  - serverless-offline-env
+  - serverless-offline
+  - serverless-dotenv-plugin
+
+custom:
+  serverless-offline-env:
+    path: ./env/.env.staging
+  dotenv:
+    basePath: ./env/
+    logging: false
+  bundle:
+    tsConfig: 'tsconfig.build.json'
+
+functions:
+  hello:
+    handler: src/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
