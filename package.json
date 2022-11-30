@@ -5,7 +5,6 @@
   "scripts": {
     "predev": "yarn",
     "dev": "serverless offline start -s staging",
-    "test": "serverless-bundle test",
     "deploy:staging": "serverless deploy -s staging",
     "deploy:production": "serverless deploy -s production",
     "remove:production": "serverless remove -s production",
