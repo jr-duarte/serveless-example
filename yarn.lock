@@ -8359,11 +8359,6 @@ serverless-dotenv-plugin@^4.0.2:
     dotenv "^16.0.1"
     dotenv-expand "^8.0.3"
 
-serverless-offline-env@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/serverless-offline-env/-/serverless-offline-env-0.2.0.tgz#4569b07db159ae71c35e4bcfce1b640f712d28dd"
-  integrity sha512-RMbD7ynqQRsfDr0lhiejerm256kd3cKdFntfWaC+2kuKEgLiqmhH8utSlvUh7ok1l/nn4DSxDHzYZmQ0ZFwSTw==
-
 serverless-offline@^11.6.0:
   version "11.6.0"
   resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-11.6.0.tgz#6ee6969c27d2c413466a45d5ab709152a12da58b"

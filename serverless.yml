@@ -7,7 +7,6 @@ provider:
 
 plugins:
   - serverless-bundle
-  - serverless-offline-env
   - serverless-offline
   - serverless-dotenv-plugin
   - serverless-prune-plugin
@@ -15,8 +14,6 @@ plugins:
 custom:
   bundle:
     tsConfig: 'tsconfig.build.json'
-  serverless-offline-env:
-    path: ./env/.env.staging
   dotenv:
     basePath: ./env/
     logging: false
