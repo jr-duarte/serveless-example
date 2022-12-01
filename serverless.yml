@@ -24,8 +24,8 @@ custom:
 
 functions:
   hello:
-    handler: src/handler.hello
+    handler: src/handler.main
     events:
       - http:
-          path: hello
-          method: get
+          path: main
+          method: post
