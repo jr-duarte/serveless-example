@@ -31,7 +31,12 @@ export const schemaValidator = (schema: {
       return {
         statusCode: 400,
         body: JSON.stringify({
-          errors: error,
+          errors: error.inner.map((item) => {
+            return {
+              field: item.path,
+              error: item.message,
+            };
+          }),
         }),
       };
     }

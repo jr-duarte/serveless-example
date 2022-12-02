@@ -17,20 +17,20 @@ async function hello(event: APIGatewayEvent): Promise<APIGatewayProxyResult> {
 export const testeSchema = {
   body: object({
     name: string()
-      .typeError('name - não é uma string')
+      .typeError('não é uma string.')
       .strict(true)
-      .required('name - campo obritagório'),
+      .required('campo obritagório.'),
     email: string()
-      .typeError('email - não é uma string')
+      .typeError('não é uma string.')
       .strict(true)
-      .email('email - inválido')
-      .required('email - campo obritagório'),
+      .email('email inválido.')
+      .required('campo obritagório.'),
   }).required(),
   queryStringParameters: object({
     id: string()
-      .typeError('id - não é uma string')
+      .typeError('query params não é uma string.')
       .strict(true)
-      .required('id - campo obritagório'),
+      .required('query params obritagório.'),
   }),
 };
 
