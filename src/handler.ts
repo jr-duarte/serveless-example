@@ -7,7 +7,7 @@ async function hello(event: APIGatewayEvent): Promise<APIGatewayProxyResult> {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: `teste - env -${process.env.TESTE}`,
+      message: `teste - env - ${process.env.TESTE}`,
       body: JSON.parse(event.body || ''),
       params: event.queryStringParameters,
     }),
